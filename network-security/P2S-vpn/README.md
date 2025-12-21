@@ -140,3 +140,19 @@ For this lab, we’ll create a **self-signed root certificate** and a **client c
 
 ➡️ **You are now connected to the web server via VPN!**
 
+
+### Screenshots
+1. Web server with public IP accessible from internet
+![alt text](<Screenshot 2025-12-21 165307.png>)
+
+2. Removed public IP from web server
+![alt text](<Screenshot 2025-12-21 165626.png>)
+
+3. Downloaded and installed VPN client
+![alt text](<Screenshot 2025-12-21 171257.png>)
+
+4. Web server access thorugh VPN using private IP
+![alt text](<Screenshot 2025-12-21 171422.png>)
+
+5. List of resources created 
+![alt text](<Screenshot 2025-12-21 171529.png>)
