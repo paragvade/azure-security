@@ -28,3 +28,9 @@ variable "gateway_subnet_cidr" {
   type        = string
   default     = "10.0.1.0/27"
 }
+
+variable "admin_password" {
+  description = "Admin password for Windows VM (requires: lower+upper+digit+special)"
+  type        = string
+  sensitive   = true  # Hides password from terraform plan/apply output
+}

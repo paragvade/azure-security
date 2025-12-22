@@ -110,7 +110,7 @@ resource "azurerm_windows_virtual_machine" "webvm" {
   location              = azurerm_resource_group.app_rg.location
   size                  = "Standard_D2s_v3"
   admin_username        = "appadmin"
-  admin_password        = "Abcd@1234"  # ✅ Lower+Upper+Digit+Special
+  admin_password        = var.admin_password   
 
   network_interface_ids = [azurerm_network_interface.webvm_nic.id]
 
