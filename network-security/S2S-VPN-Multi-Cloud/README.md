@@ -7,6 +7,7 @@ Multi-cloud S2S VPN connection between Azure VNet and AWS VPC.
  **ExpressRoute** - is completely private connection. Does not traverse through public internet. Offers higher bandwidth and lower latency than VPN. Enterprises neeeding high-throughput, large scale data transfers between on-prem and Azure may prefer this over S2S VPN.
 
 **Architecture diagram**
+<img width="1803" height="990" alt="Architecture" src="https://github.com/user-attachments/assets/4c91c041-b8a8-4929-95e8-0bf3fa46b9c5" />
 
 
 ## The Story of Connecting Two Cloud Networks
