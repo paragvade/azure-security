@@ -8,6 +8,19 @@
 - Built-in redundancy --> Each *ExpressRoute circuit* (connection between Partner edge location and Microsoft edge location) has two connections
 - **ExpressRoute locations** - different from Azure regions. Once you connect to an ExpressRoute location, all Microsoft resources (Azure, M365) within that 'geopolitical region' becomes available to connect. A geopolitical region includes many Azure regions. E.g. North America is a geopolitical region. It includes Azure regions like East US, West US, Central US, Canada East, etc. It also includes ExpressRoute locations like New York, Silicon Valley, Vancouver etc. Connecting to ExpressRoute at New York location will make whole North America geopolitical region available.
  <img width="1016" height="196" alt="Geopolitical regions" src="https://github.com/user-attachments/assets/aae235d4-0ed1-473f-80ca-812f3ebea4de" />
+
+**ExpressRoute Premium**
+- Global Connectivity i.e. can access Microsoft services in any region around world through ExpressRoute by enabling ExpressRoute Premium
+
+**ExpressRoute Global Reach**
+- To connect on-prem data centers in different parts of the world using Microsoft network
+
+**ExpressRoute Direct**
+- Instead of using ISP to connect to Microsoft edge location, direct physical connectivity from data center to Microsoft Edge location. Exclusive ports on Microsoft's hardware than sharing ISPs infra. Regulated industries need physical separation and layer 2 encryption (MACSec)- which is available only in Direct. In terms of bandwidth, Direct has only 2 options-10 Gbps or 100 Gbps (hence costly). Standard ExpressRoute can start with 50 Mbps.
+
+
+
+ 
 - **ExpressRoute Premium** - Global Connectivity i.e. can access Microsoft services in any region around world through ExpressRoute by enabling ExpressRoute Premium
 - **ExpressRoute Global Reach** - to connect on-prem data centers in different parts of the world using Microsoft network
 - **ExpressRoute Direct**- instead of using ISP to connect to Microsoft edge location, direct physical connectivity from data center to Microsoft Edge location. Exclusive ports on Microsoft's hardware than sharing ISPs infra. Regulated industries need physical separation and layer 2 encryption (MACSec)- which is available only in Direct. In terms of bandwidth, Direct has only 2 options-10 Gbps or 100 Gbps (hence costly). Standard ExpressRoute can start with 50 Mbps.
