@@ -11,6 +11,8 @@ Azure Virtual WAN is primarily used to solve the "spaghetti network" problem in 
         - *"User VPN"* is simply the name Azure Virtual WAN uses for Point-to-Site (P2S) VPN.
         - Users are "endpoints" that need secure access to Spokes (apps) or Branches (internal file servers).
 
+<img width="1376" height="817" alt="image" src="https://github.com/user-attachments/assets/13900d4e-c1df-4726-b008-63f51b8cef73" />
+
 ## Virtual WAN SKUs
 
 The SKU is set on the **Virtual WAN** resource (the top-level container), but it dictates the capabilities of the **Virtual Hubs** inside it. When you create the top-level "Virtual WAN" resource, you choose "Basic" or "Standard".
