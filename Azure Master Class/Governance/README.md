@@ -62,8 +62,14 @@ Not active, but Eligible assignment. Just enough permission + just in time
 
 
 ### ABAC
-- 
-- Limited support but growing
+- RBAC has limitations when it comes to granular permissions. ABAC solves it. ABAC is attaching conditions to existing RBAC roles. This is very helpful when in scenarios like grant access to only particular data objects in a storage account.
+- Not all RBAC roles support it, but list is growing.
+- Conditions can be based on resource, user, etc. E.g. resource name, resource subnet, user name, time of accessing, etc 
+
+### Azure Policy
+
+
+- based on properties of resource exposed using 'alias'
 
 
 
