@@ -67,11 +67,34 @@ Not active, but Eligible assignment. Just enough permission + just in time
 - Conditions can be based on resource, user, etc. E.g. resource name, resource subnet, user name, time of accessing, etc 
 
 ### Azure Policy
+- Conditions around attributes of a resource that are exposed as **'aliases'**
+- On top of ARM. Nothing can escape = Portal. CLI, etc
+- Can be Enforced/Audit (start with Audit to understand effect of policy)
+- Policies grouped into **Initiatives** - easy to track compliance. Built in Initiatives for major compliance frameworks e.g. NIST, PCI, Reserve Bank of India. 
+- Initiatives also make assignments easy. Don't have to assigne each policy separately.
+- DINE effect- after something is created, check condition and do something
+- Can exclude some resources/RGs from scope during assignment
+ 
+### Deployment Stacks
+- Blueprints are deprecated in favour of Deployment Stacks
+- Resources with same lifecycle deployed together
+- Can mark resources as Unmanaged - and they can be deleted/managed independently
+- Can protect resources against deletion
 
 
-- based on properties of resource exposed using 'alias'
+### Azure Resource Graph
+- Stores resource configs, relationships and changes in config. 
+- Can be queries using KQL. Resources can be queries AT SCALE
+- ARM is not queries directly - will take many API calls and iterating through many subscriptions. Azure Resource Graph is actually **continuously updated index of all resources**. It is **eventually consisten**t** i.e. changes in ARM are updated eventually (seconds to minutes), not in real time.
+- Respects RBAC - can only see what you have permissions over
+- Use cases
+    - Find all storage accounts with public acccess enabled
+    - Identify all VMs without endpoint protection installed
+    - Track confic changes e.g. When particular NSG rule changes?
 
-
-
-
+### Azure Advisor
+- Provides recommentations in key areas. Should be checked weekly.
+- Recommendations in categories- cost, securrity, reliability, operational excellence
+- Can set up alerts based on new recommendations- e.g. If Azure Advisor recommendation in particular category e.g. Security with 'impact' level 'high' --? Action Group should send email
+- Advisor score calculates how much of azure advisor recommentations are actioned 
 
