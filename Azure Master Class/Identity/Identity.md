@@ -3,7 +3,7 @@
 ### Need for Identity
 - Any service should be able to apply Principle of least prrivilege - it involves granting certain actions (roles) to certain security principle at a defined scope ('Role assignment'). For this, every security princial should be uniquely identifiable. A centeal store of identities is required for this. 
 
-<img width="1266" height="1394" alt="Entra" src="https://github.com/user-attachments/assets/a697a8a7-0365-4fbc-b337-69d1608457e1" />
+<img width="895" height="986" alt="Entra" src="https://github.com/user-attachments/assets/a697a8a7-0365-4fbc-b337-69d1608457e1" />
 
 
 ### Decentralized Identities
